@@ -261,6 +261,8 @@ class CarInterface(CarInterfaceBase):
       ret.mass = 1825.0 + STD_CARGO_KG
       ret.wheelbase = 2.906
       ret.centerToFront = ret.wheelbase * 0.4
+      ret.steerFaultMaxAngle = 110
+      ret.steerFaultMaxFrames = 90
     elif candidate == CAR.FORTE:
       ret.mass = 3558. * CV.LB_TO_KG
       ret.wheelbase = 2.80
